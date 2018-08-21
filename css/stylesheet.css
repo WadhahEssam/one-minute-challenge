@@ -1,0 +1,439 @@
+*{
+    margin:0px;
+    padding:0px;
+    word-wrap: break-word;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*direction:ltr ;*/
+}
+
+
+body {
+    /*background-image: url("http://cielblog.me/quiz/dist/public/assets/img/pattern.png");*/
+    background-image: url("https://ftc-questions-wadahesam.c9users.io/images/pattern.png");
+    background-color:white;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-family: cairo , sans-serif ; 
+    font-size:12px;
+}
+
+p {
+    margin:0px;
+}
+
+input {
+    margin:3px;
+    width:40%;
+    height:25px;
+    border-radius:6px;
+    border:none;
+    font-weight: bold;
+    font-family: cairo , sans-serif ; 
+    padding:0px 10px;
+
+}
+
+input[type=submit] {
+    margin-top:10px;
+    width:30%;
+    height:40px;
+    background-color:#4CAF50;
+    color:white;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=text] {
+    direction:ltr;
+}
+
+textarea {
+    height:100px;
+    width:80%;
+    max-width:90%;
+    border-radius:8px;
+    border:none;
+    font-weight: bold;
+    font-family: cairo , sans-serif ; 
+    padding:0px 10px;
+    direction:ltr;
+}
+
+select {
+    margin-top:10px;
+    width:40px;
+    height:30px;
+    border-radius:6px;
+    font-weight:bold;
+    font-family: cairo , sans-serif ; 
+    font-size:12px;
+}
+
+#leaderboard-table {
+    background-color: rgba(190, 204, 69,0.7);
+    border-radius: 10px;
+    padding: 15px;
+    margin:10px;
+}
+
+table {
+    margin:auto;
+    word-wrap: break-word;
+}
+
+th {
+    font-weight: bold  ;
+    padding: 4px 0px;    
+    font-size: 14px ; 
+
+
+}
+
+td {
+    font-weight: normal;
+    padding:2px 5px;
+    font-size: 16px ; 
+}
+
+#uploadfile {
+    display:none;
+}
+
+#browse-label {
+    background-color: rgba(51, 94, 99, 0.76);
+    padding: 5px 15px 10px 9px;
+    margin: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+}
+
+
+.main-container {
+    position:relative;
+    width:40% ; 
+    padding:5px 30px 5px 30px;
+    min-width:300px;
+    margin-left: auto;
+    margin-top:20px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius:8px;
+    border:1px solid rgba(112, 112, 111,0.5) ;
+}
+
+#main-menu {
+    background-color:rgba(33, 69, 90, 0.48);
+    /*display:none;*/
+}
+
+#enter-menu {
+    background-color:rgba(201, 0, 0 , 0.5);
+    /*display:none;*/
+}
+
+#add-questions-menu {
+    background-color:rgba(69, 204, 120 , 0.7);
+    /*display:none;*/
+}
+
+.quesion-container {
+    background-color:rgba(201, 0, 0 , 0.5);
+    position: relative;
+    top: 40px;
+    padding-top: 80px;
+    word-wrap: break-word;
+}
+
+#leaderboard-menu {
+    background-color:rgba(201, 204, 69,0.7);
+    padding-bottom: 20px ;
+    max-height:460px ; 
+    overflow-y: scroll ; 
+    /*display:none;*/
+}
+
+
+
+
+#leaderboard-menu::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+
+}
+
+#leaderboard-menu::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+
+}
+
+#leaderboard-menu::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	background-color: #000000;
+
+}
+
+
+
+
+#message {
+    height: 30px;
+    width: 30%;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    background-color: rgb(98, 64, 137);
+    padding: 10px 4px 4px 4px;
+}
+
+#counter-container {
+    background-color: rgb(60, 71, 138);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    top: 215px;
+}
+
+#counter {
+    z-index: 2; 
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 245px;
+}
+
+
+.question {
+    background-color: rgba(160, 78, 78, 0.7);
+    padding: 20px 10px;
+    border-radius: 10px 10px 0px 0px;
+    word-wrap: break-word;
+}
+
+.question-image {
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.answers {
+    width:100%;
+    border-spacing: 0px;
+    word-wrap: break-word;
+}
+
+.option {
+    background-color: #e0a55a;
+    width:50%;
+    padding: 10px 5px ;
+    word-wrap: break-word;
+}
+
+.option:hover {
+    background-color: rgb(150, 191, 114);
+}
+
+.option2 {
+    border-bottom: 1px solid rgba(160, 78, 78, 0.7) ;
+}
+
+.option1 {
+    border-bottom: 1px solid rgba(160, 78, 78, 0.7) ;
+    border-right:1px solid rgba(160, 78, 78, 0.7) ;
+}
+
+.option3 {
+    border-radius: 0px 0px 0px 10px;
+    border-right:1px solid rgba(160, 78, 78, 0.7) ;
+}
+
+.option4 {
+    border-radius: 0px 0px 10px 0px ;
+}
+
+.refresh-botton {
+    width:30px;
+    height:30px;
+    padding:4px 3.5px 3px 3px;
+    background:rgba(256,256,256,0.5);
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.refresh-botton:hover {
+    background-color:rgba(0,0,0,0.5);
+}
+
+.home-botton {
+    width:30px;
+    height:30px;
+    padding:4px 3.5px 3px 3px;
+    background:rgba(256,256,256,0.5);
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.home-botton:hover {
+    background-color:rgba(0,0,0,0.5);
+}
+
+
+a {
+    color:white;
+    text-decoration:none;
+}
+
+.main-botton {
+    padding:10px 0px;
+    border-radius:5px;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    border:1px solid rgba(255, 255, 255, 0.66);
+}
+
+#info {
+    opacity: 0;
+}
+
+a {
+    text-decoration:none;
+    color:rgb(155, 155, 155);
+    font-size:10px;
+}
+
+
+
+#start {
+    background-color:rgba(204, 69, 69,0.7);
+    opacity:0;
+}
+
+#start:hover {
+    background-color:rgb(147, 50, 50);
+}
+
+#add-questions {
+    background-color:rgba(69, 204, 120 , 0.7);
+    opacity:0;
+    
+}
+
+#add-questions:hover{
+    background-color:rgb(53, 163, 93);
+}
+
+#leaderboard {
+    background-color:rgba(201, 204, 69,0.7);
+    margin-bottom:15px;
+    opacity:0;
+}
+
+#leaderboard:hover {
+    background-color:rgb(143, 145, 52);
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+    body {
+    /*-moz-transform: scale(2); */
+    zoom:220%; /* For Chrome, IE, default 100%*/
+    }
+    
+    .option:hover {
+    background-color: rgb(170, 123, 66);
+    }
+    
+    .main-container {
+    position:relative;
+    width:80% ; 
+    padding:5px 30px 5px 30px;
+    min-width:300px;
+    margin-left: auto;
+    margin-top:20px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius:8px;
+    border:2px solid rgba(37, 84, 189, 0.12) ;
+    }
+    
+    #logo {
+        height:100px;
+        width:100px;    
+    }
+    
+    #ftc-logo {
+        /*height:50px;*/
+    }
+    
+    
+    #counter-container {
+        background-color: rgb(60, 71, 138);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+        top: 130px;
+    }
+
+    #counter {
+        z-index: 2; 
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 160px;
+    }
+    
+    #message {
+        height: 30px;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        background-color: rgb(98, 64, 137);
+        padding: 10px 4px 4px 4px;
+    }
+    
+    .quesion-container {
+        background-color:rgba(201, 0, 0 , 0.5);
+        position: relative;
+        top: 40px;
+        padding-top: 70px;
+        word-wrap: break-word;
+    }
+
+}
